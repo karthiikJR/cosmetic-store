@@ -11,6 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Elsie', cursive;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -279,4 +280,34 @@ nav {
     bottom: -47%;
     left: 60%;
     transform: translate(-50%, -50%);
+}
+
+.footerContent {
+    margin: auto;
+    width: 90.5%;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.footerBorder {
+    /* background-color: var(--dark);  */
+    margin: auto;
+    width: 90.5%;
+    height: 10px;
+    border-top: 1px solid var(--main_dark);
+}
+
+.footerText {
+    font-size: 1.1rem;
+    width: 85%;
+    color: var(--dark);
+    margin-bottom: 1%;
+}
+
+.contacts {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1%;
 }
