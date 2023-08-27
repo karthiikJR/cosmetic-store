@@ -1,0 +1,183 @@
+/* using media queries to make this responsive */
+@media only screen and (max-width: 1024px) {
+    * {
+        /* border: 1px solid red; */
+        scroll-behavior: smooth;
+    }
+    main{
+        overflow: hidden;
+    }
+    .main_img {
+        width: 80%;
+        position: absolute;
+        top: 60%;
+        left: 55%;
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+    .leaf_infront {
+        z-index: 1;
+        width: 35%;
+        position: absolute;
+        top: 65%;
+        left: 35%;
+        transform: translate(-50%, 18%);
+        filter: blur(5px);
+    }
+    .behind_main {
+        width: 25%;
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        transform: translate(5%, -55%);
+        filter: blur(7px);
+    }
+    .leaf_left {
+        width: 25%;
+        position: absolute;
+        top: 45%;
+        left: 2%;
+        transform: translate(0%,20%);
+    }
+    .leaf_right {
+        width: 10%;
+    }
+
+    .podium {
+        width: 100%;
+        position: absolute;
+        bottom: -28%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+    .podium_img {
+        width: 120%;
+        position: absolute;
+        bottom: -47%;
+        left: 87%;
+        transform: translate(-50%, -50%);
+    }
+    .right_img {
+        z-index: -1;
+    }
+    .image_container_hero {
+        z-index: -1;
+    }
+
+    .infoHead{
+        z-index: 10;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    * {
+        /* border: 1px solid red; */
+        scroll-behavior: smooth;
+    }
+
+    .image_container{
+        position: relative;
+        height: 40.375rem;
+    }
+    .mainHeading {
+        font-size: 4.5rem;
+    }
+    .main_img {
+        width: 100%;
+        position: absolute;
+        top: 60%;
+        left: 58%;
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+    .leaf_infront {
+        z-index: 1;
+        width: 45%;
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        transform: translate(-50%, 18%);
+        filter: blur(5px);
+    }
+    .leaf_left {
+        width: 30%;
+        position: absolute;
+        top: 45%;
+        left: 2%;
+        transform: translate(0%,20%);
+    }
+
+    .leaf_right {
+        width: 15%;
+        left:70%;
+
+    }
+
+    .main_img1 {
+        width: 65%;
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        transform: translate(30%,10%);
+        filter: blur(3px);
+    }
+
+    .behind_main {
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        transform: translate(5%, -55%);
+        filter: blur(7px);
+    }
+
+    .discover {
+        margin-left: 50px;
+    }
+
+    .mainHeadingHero {
+        font-size: 4.5rem;
+    }
+
+    .mainSubheadingHero {
+        width: 100%;
+        top: 20%;
+        font-size: 2rem;
+    }
+
+    .buyNowHero {
+        top: 45%;
+    }
+
+    .infoHead {
+        top: 60%;
+    }
+
+    .podium {
+        width: 110%;
+        bottom: -24%;
+    }
+    .podium_img {
+        width: 150%;
+        bottom: -30%;
+        left: 59%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    
+    * {
+        border: 1px solid red;
+        scroll-behavior: smooth;
+    }
+
+    .mainHeading {
+        font-size: 1.5rem;
+    }
+
+    .info{
+        width: 5rem;
+        font-size: 0.8rem;
+    }
+}
