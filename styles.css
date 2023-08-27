@@ -214,6 +214,7 @@ nav {
 
 .mainHeadingHero {
     position: absolute;
+    width: 60%;
     font-size: 5rem;
     font-weight: 300;
     top:-7%;

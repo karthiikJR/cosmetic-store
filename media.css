@@ -63,6 +63,10 @@
         z-index: -1;
     }
 
+    .mainHeadingHero {
+        width: 100%;
+    }
+
     .infoHead{
         z-index: 10;
     }
@@ -135,6 +139,7 @@
     }
 
     .mainHeadingHero {
+        width: 100%;
         font-size: 4.5rem;
     }
 
@@ -168,16 +173,99 @@
 @media only screen and (max-width: 320px) {
     
     * {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         scroll-behavior: smooth;
+    }
+    .navBar{
+        overflow-x: hidden;
     }
 
     .mainHeading {
-        font-size: 1.5rem;
+        top: -2.5%;
+        font-size: 2rem;
     }
 
+    .main_img {
+        width: 250%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .leaf_infront {
+        z-index: 1;
+        width: 100%;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        transform: translate(-50%, 18%);
+        filter: blur(5px);
+    }
+
+    .main_img1{
+        display: none;
+    }
+
+    .behind_main {
+        width: 85%;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        transform: translate(5%, -55%);
+        filter: blur(7px);
+    }
+
+    .leaf_right {
+        display: none;
+    }
+
+    .leaf_left {
+        width: 30%;
+        position: absolute;
+        top: 45%;
+        left: 0%;
+        transform: translate(0%,20%);
+    }
+    .top_left_img {
+        display: none;
+    }
+
+    .discover {
+        font-size: 1rem;
+        width: 20%;
+        margin-left: 100px;
+    }
+
+    .mainHeadingHero {
+        font-size: 2rem;
+        top: -2.5%;
+        width: 100%;
+    }
+
+    .mainSubheadingHero {
+        width: 100%;
+        top: 10%;
+        font-size: 1rem;
+    }
+    .buyNowHero {
+        font-size: 0.5rem;
+        height: 5%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        width: 20%;
+        top: 30%;
+    }
+
+    .infoHead {
+        top: 40%;
+        font-size: 1rem;
+        
+    }
     .info{
-        width: 5rem;
-        font-size: 0.8rem;
+        height: 100%;
+        font-size: 0.5rem;
+        width: 100%;
     }
 }
