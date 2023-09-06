@@ -87,13 +87,15 @@ script.onload = function () {
 		reset: true,
 	});
 
-	ScrollReveal().reveal(".podium_img", {
-		duration: 2000,
-		origin: "top",
-		distance: "400px",
-		easing: "cubic-bezier(0.5, 0, 0, 1)",
-		reset: true,
-	});
+	if (window.innerWidth > 1024) {
+		ScrollReveal().reveal(".podium_img", {
+			duration: 2000,
+			origin: "top",
+			distance: "400px",
+			easing: "cubic-bezier(0.5, 0, 0, 1)",
+			reset: true,
+		});
+	}
 };
 
 function handleScroll() {
