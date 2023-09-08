@@ -42,6 +42,30 @@ window.addEventListener("scroll", function () {
 	}
 });
 
+
+
+
+// Hamburger menu
+const navBar = document.querySelector(".navBtn");
+const toggle = document.querySelector(".toggleBtn");
+
+toggle.addEventListener("click", () => {
+	const visible = navBar.getAttribute("data-visible");
+	console.log(visible);
+	if(visible == "false") {
+		navBar.setAttribute("data-visible", true);
+		toggle.setAttribute("aria-expanded", true);
+	}
+	else {
+		navBar.setAttribute("data-visible", false);
+		toggle.setAttribute("aria-expanded", false);
+	}
+});
+
+
+
+
+
 // Create a script element to load ScrollReveal
 var script = document.createElement("script");
 script.src = "https://unpkg.com/scrollreveal";

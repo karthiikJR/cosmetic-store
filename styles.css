@@ -20,6 +20,7 @@ main{
 
 body {
     background-color: var(--light_grey);
+    overflow-x: hidden;
 }
 
 nav {
@@ -29,12 +30,27 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+ul {
+    gap: 2rem;
+}
 
+li {
+    list-style: none;
+    align-self: center;
+}
 
 .navBtn {
     display: flex;
     justify-content: space-evenly;
 
+}
+
+.toggleBtn{
+    display: none;
+}
+
+.cartMob {
+    display: none;
 }
 
 .navBtn a {

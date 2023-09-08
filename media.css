@@ -299,4 +299,49 @@
     .icons{
         scale: 0.6;
     }
+
+    .navCart{
+        display: none;
+    }
+
+    /* Creating hamburger menu */
+    
+    .navBtn{
+        position: fixed;
+        z-index: 10;
+        inset: 0 0 0 30%;
+        gap: 2.5rem;
+        flex-direction: column;
+        background: hsla(0, 0%, 100%, 0.5);
+        backdrop-filter: blur(1rem);
+        padding:min(20vh, 10rem) 2rem ;
+        justify-content: flex-start;
+        transform: translate(100%);
+        transition: transform 0.35s ease-out;
+    }
+
+    .navBtn[data-visible="true"] {
+        transform: translate(0);
+    }
+
+    .cartMob{
+        display: block;
+    }
+    .toggleBtn {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: url(img/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        border: 0;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .toggleBtn[aria-expanded ="true"] {
+        background: url(img/icon-close.svg);
+        background-repeat: no-repeat;
+    }
 }

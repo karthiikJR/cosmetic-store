@@ -19,12 +19,14 @@
 <body>
     <nav class="navBar">
         <div class="logo">Logo</div>
-        <div class="navBtn">
-            <a href="">HOME</a>
-            <a href="">BUY</a>
-            <a href="">NEW</a>
-            <a href="">THINGS</a>
-        </div>
+        <button class="toggleBtn" aria-controls="navBtn" aria-expanded="false"></button>
+        <ul id="navBtn" data-visible="false" class="navBtn">
+            <li><a href="">HOME</a></li>
+            <li><a href="">BUY</a></li>
+            <li><a href="">NEW</a></li>
+            <li><a href="">THINGS</a></li>
+            <li><a href="" class="cartMob">CART</a></li>
+        </ul>
         <a href="" class="navCart"><span class="material-symbols-outlined"
                 style="color: #0c1713">shopping_cart</span></a>
     </nav>
